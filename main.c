@@ -10,6 +10,17 @@ void somatoria(int x, int y){
     printf("\nA somatoria é %d\n", soma);
 }
 
+long int somatoriaRecursiva (int x, int y){
+    if(x<-y){
+        long int soma = x;
+            long int resultado = somatoriaRecursiva(x+1,y);
+            printf("%ld -", resultado);
+        return soma + resultado;
+    }
+}
+else{
+    return 0;
+}
 
 int main(void){
     
@@ -19,8 +30,9 @@ int main(void){
     printf("\n\nDigite o numero y:");
     scanf("%d", &y);
 
-    soma(x,y);
+    //soma(x,y);
 
+    printf("\nA somatoria é: %ld", somatoriaRecursiva(x,y))
 
     return 0;
 }
