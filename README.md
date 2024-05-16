@@ -1,12 +1,16 @@
-                                                                                                  Instituto de Ciências Matemática e de Computação - ICMC
-                                                                                                            Universidade de São Paulo - USP
-                                                                                                  SSC0535 - GCMES | 1o Semestre de 2024 | Profa. Dra. Lina Garcés
-                                                                                                              ** Lab - Comandos básicos GIT**
+Instituto de Ciências Matemática e de Computação - ICMC
+Universidade de São Paulo - USP
+SSC0535 - GCMES | 1o Semestre de 2024 | Profa. Dra. Lina Garcés
+** Lab - Comandos básicos GIT**
+
+
 **1 - INSTALAR GIT NA SUA MÁQUINA LOCAL**
 - No terminal digite o seguinte comando:
       git --version
+
 **2 - CRIAR REPOSITÓRIO REMOTO NO GITHUB**
 Crie um novo repositório remoto chamado: lab-git-nomeestudante
+
 **4 CLONAR O REPOSITÓRIO REMOTO NO REPOSITÓRIO LOCAL**
 Na sua máquina, na área de trabalho (Desktop), crie uma pasta chamada lab-git-basico
 para ser usada como Diretório de Trabalho Local (Working Directory).
@@ -24,6 +28,7 @@ Pode ser verificado que, dentro dessa pasta o git criou uma pasta oculta (.git) 
 considerada o repositório local.
 Obs: não deve deletar essa pasta pois perderá o registro de todas as mudanças realizadas
 nos arquivos versionados.
+
 **5 - CONFIGURAR SUA IDENTIDADE**
 Uma das primeiras coisas que você deve fazer ao instalar Git é configurar seu nome de
 usuário e endereço de e-mail. Isto é importante porque cada commit usa esta informação, e
@@ -35,6 +40,7 @@ Reiterando, você precisará fazer isso somente uma vez se tiver usado a opção
 porque então o Git usará esta informação para qualquer coisa que você fizer naquele
 sistema. Se você quiser substituir essa informação com nome diferente para um projeto
 específico, você pode rodar o comando sem a opção --global dentro daquele projeto.
+
 **6 EXECUTANDO O WORKFLOW COM REPOSITÓRIO REMOTO**
 Suponha que você está trabalhando num projeto na linguagem C, e precisa criar um
 programa que dado um intervalo de números inteiros, [x,y] calcule diversas operações
@@ -91,9 +97,11 @@ Verifiquemos de novo o estado das mudanças do nosso arquivo
 Percebemos que as últimas mudanças não estão registradas no repositório local. Dessa
 forma, necessitamos adicionar as mudanças na staged area e realizar o commit para o
 repositório local, como mostrado a seguir.
+
 **6.1 PUBLICANDO AS MUDANÇAS NO REPOSITÓRIO REMOTO**
 Antes de realizar mudanças no repositório remoto, você precisa configurar os tokens de
 autenticação. 
+
 **ENVIANDO MUDANÇAS NO REPOSITÓRIO REMOTO (GITHUB)**
 O comando PUSH “empurra” os commits mais recentes do repositório local para o
 repositório remoto.
